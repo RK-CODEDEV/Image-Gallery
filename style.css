@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.901);
+    
+}
+
+.container h1{
+    text-align: center;
+    text-decoration:  underline red;
+    color: white;
+    text-transform: capitalize;
+    padding: 20px;
+    font-weight: 20px;
+    font-size: 40px;
+}
+
+.container .image_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    padding:10px;
+    margin-top: 20px;
+}
+
+.container .image_section .image{
+    height: 260px;
+    width: 400px;
+    overflow: hidden;
+    border: 3px solid rgb(25, 209, 77);
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.container .image_section .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+    
+}
+
+.container .image_section .image:hover img{
+    transform: scale(1.1);
+    
+}
+
+.container .popup-img{
+    position: fixed;
+    top:0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.855);
+    height: 100%;
+    width: 100%;
+    display: none;
+
+}
+
+.container .popup-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    width: 70vw;
+    object-fit: cover;
+    border: 1px solid  rgb(25, 209, 77);
+    border-radius: 10px;
+}
+
+.container .popup-img span{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .container .image_section .image{
+        width:90%;
+    }
+    
+}
