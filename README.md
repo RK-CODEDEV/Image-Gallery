@@ -1,9 +1,10 @@
-🚗 Car Collection Gallery — Responsive Image Popup
+#🚗 Car Collection Gallery — Responsive Image Popup
 
 A clean and modern Car Collection Image Gallery built using pure HTML, CSS, and JavaScript.
 This project displays a grid of car images with a smooth hover effect and a full-screen popup preview when an image is clicked.
 
 Perfect for beginners learning frontend development and for showcasing gallery layouts in portfolios.
+
 
 🌐 Live Demo
 
